@@ -1,0 +1,75 @@
+/* Light mode styles */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode textarea {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode textarea {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Toggle switch styles */
+.toggle-switch {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Dark and Light mode settings inside the notes */
+.light-mode #notes {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+.light-mode #notes .list-group-item {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+.light-mode .note-date {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+
+.dark-mode #notes {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+.dark-mode #notes .list-group-item {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.dark-mode .note-date {
+    background-color: #000000; 
+    color: #ffffff; 
+}

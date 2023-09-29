@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title%}Sign Up{% endblock %}
+
+{% block content %}
+<form method ="POST">
+    <h3 align="center">Create a New Account  <i class="bi bi-folder-plus"></i></h3>
+  
+    <br/>
+    <!--Email Address Div-->
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          </div>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Please enter your e-mail"
+          />
+        </div>
+      </div>
+      
+    <!--First Name Div-->
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="bi bi-person"></i></span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            name="firstName"
+            placeholder="Please enter your first name"
+          />
+        </div>
+      </div>
+      
+
+<!-- Password 1 Div -->
+<div class="form-group">
+    <label for="password1">Password</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+      </div>
+      <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Please enter your password"
+      />
+    </div>
+  </div>
+  
+  <!-- Password 2 Div -->
+  <div class="form-group">
+    <label for="password2">Password (Confirm)</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+      </div>
+      <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Confirm Password"
+      />
+    </div>
+  </div>
+  
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+
+{% endblock %}

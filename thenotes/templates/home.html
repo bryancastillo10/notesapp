@@ -1,0 +1,32 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %} 
+{% block content%}
+
+<h1 align="center">Writing Notes App</h1>
+<form method="POST">
+    <div class="form-group">
+        <textarea name="note" id="note" class="form-control" rows="4" placeholder="Add your note here"></textarea>
+    </div>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Note</button>
+    </div>
+</form>
+
+<hr /> 
+
+<h2>List of Notes <i class="bi bi-paperclip"></i></h2>
+<ul class="list-group list-group-flush" id="notes">
+    {% for note in user.notes %}
+    <li class="list-group-item">
+        {{ note.data }}
+        <button type="button" class="close" onClick="deleteNote(JSON.parse('{{ note.id }}'))">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="note-date" align="right">
+            <b>Created on:</b> {{ formatted_datetime }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+    {% endblock %}
